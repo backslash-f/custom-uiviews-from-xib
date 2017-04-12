@@ -11,7 +11,6 @@
 		EDCE3EF21D411F9200428254 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCE3EF11D411F9200428254 /* ViewController.swift */; };
 		EDCE3EF51D411F9200428254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCE3EF31D411F9200428254 /* Main.storyboard */; };
 		EDCE3EF71D411F9200428254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDCE3EF61D411F9200428254 /* Assets.xcassets */; };
-		EDCE3EFA1D411F9200428254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCE3EF81D411F9200428254 /* LaunchScreen.storyboard */; };
 		EDCE3F071D41238200428254 /* Pokemon.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDCE3F061D41238200428254 /* Pokemon.xib */; };
 		EDCE3F091D412ECA00428254 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCE3F081D412ECA00428254 /* Pokemon.swift */; };
 /* End PBXBuildFile section */
@@ -22,7 +21,6 @@
 		EDCE3EF11D411F9200428254 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EDCE3EF41D411F9200428254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDCE3EF61D411F9200428254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EDCE3EF91D411F9200428254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDCE3EFB1D411F9200428254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDCE3F061D41238200428254 /* Pokemon.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Pokemon.xib; sourceTree = "<group>"; };
 		EDCE3F081D412ECA00428254 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 		EDCE3F051D411FE400428254 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				EDCE3EF81D411F9200428254 /* LaunchScreen.storyboard */,
 				EDCE3EF31D411F9200428254 /* Main.storyboard */,
 			);
 			path = Storyboard;
@@ -137,11 +134,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = singledev;
 				TargetAttributes = {
 					EDCE3EEB1D411F9100428254 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = UKS358BH88;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -168,7 +167,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDCE3EFA1D411F9200428254 /* LaunchScreen.storyboard in Resources */,
 				EDCE3F071D41238200428254 /* Pokemon.xib in Resources */,
 				EDCE3EF71D411F9200428254 /* Assets.xcassets in Resources */,
 				EDCE3EF51D411F9200428254 /* Main.storyboard in Resources */,
@@ -200,15 +198,6 @@
 			path = .;
 			sourceTree = "<group>";
 		};
-		EDCE3EF81D411F9200428254 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDCE3EF91D411F9200428254 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -226,8 +215,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -271,8 +262,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -291,6 +284,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -299,10 +293,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKS358BH88;
 				INFOPLIST_FILE = "CustomUIViewFromXib/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.singledev.CustomUIViewFromXib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -310,10 +306,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKS358BH88;
 				INFOPLIST_FILE = "CustomUIViewFromXib/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.singledev.CustomUIViewFromXib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

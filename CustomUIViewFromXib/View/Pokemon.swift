@@ -25,8 +25,8 @@ import UIKit
     
     // MARK: - Actions
     
-    @IBAction func switchTapped(sender: UISwitch) {
-        imageView.alpha = sender.on ? 1.0 : 0.2
+    @IBAction func switchTapped(_ sender: UISwitch) {
+        imageView.alpha = sender.isOn ? 1.0 : 0.2
     }
     
     // MARK: - Initializers
@@ -44,21 +44,21 @@ import UIKit
     // MARK: - Private Helper Methods
     
     // Performs the initial setup.
-    private func setupView() {
+    fileprivate func setupView() {
         let view = viewFromNibForClass()
         view.frame = bounds
         view.autoresizingMask = [
-            UIViewAutoresizing.FlexibleWidth,
-            UIViewAutoresizing.FlexibleHeight
+            UIViewAutoresizing.flexibleWidth,
+            UIViewAutoresizing.flexibleHeight
         ]
         addSubview(view)
     }
     
     // Loads a XIB file into a view and returns this view.
-    private func viewFromNibForClass() -> UIView {
-        let bundle = NSBundle(forClass: self.dynamicType)
-        let nib = UINib(nibName: String(self.dynamicType), bundle: bundle)
-        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+    fileprivate func viewFromNibForClass() -> UIView {
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
+        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         return view
     }
 }
