@@ -135,7 +135,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = singledev;
+				ORGANIZATIONNAME = "backslash-f";
 				TargetAttributes = {
 					EDCE3EEB1D411F9100428254 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -296,7 +296,7 @@
 				DEVELOPMENT_TEAM = UKS358BH88;
 				INFOPLIST_FILE = "CustomUIViewFromXib/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.singledev.CustomUIViewFromXib;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.backslash-f.CustomUIViewFromXib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -309,7 +309,7 @@
 				DEVELOPMENT_TEAM = UKS358BH88;
 				INFOPLIST_FILE = "CustomUIViewFromXib/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.singledev.CustomUIViewFromXib;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.backslash-f.CustomUIViewFromXib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
