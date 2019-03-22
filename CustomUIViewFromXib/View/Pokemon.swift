@@ -48,8 +48,8 @@ import UIKit
         let view = viewFromNibForClass()
         view.frame = bounds
         view.autoresizingMask = [
-            UIViewAutoresizing.flexibleWidth,
-            UIViewAutoresizing.flexibleHeight
+            UIView.AutoresizingMask.flexibleWidth,
+            UIView.AutoresizingMask.flexibleHeight
         ]
         addSubview(view)
     }
